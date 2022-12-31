@@ -1,0 +1,383 @@
+/*HTLM by  Mathys Tournayre - R109*/
+/*
+body{
+  background: #000;
+  margin: 0px;
+}
+
+header{
+	background: #e6ebff; 
+	height: 35px; 
+	padding: 10px; 
+
+}
+
+
+div{
+	float: left; 
+	color: #000; 
+	font-size: 30px; 
+	font-weight: bold;
+}
+
+A{
+	background:#baf3bf;
+	padding: 10px;
+	text-decoration:none;
+	}
+
+A:hover{
+	background:#828883;
+	color:#FFF;
+}
+
+main{
+	width: 80%;
+	border-left: 1px dotted black; 
+	margin: 0 auto;
+}
+
+h3{
+	color: green;
+}
+
+h3:before{content:url("punaise.png");
+}
+
+form{
+	background:#fff;
+	padding: 10px;
+	width: 50%;
+	margin: 0px 10px;
+	
+}
+*/	
+img{
+	width:264.433px;
+}
+/*
+figcaption{
+	 font-weight: bold;
+	 font-style:italic;
+	 font-size: 10px;
+	 margin-left:20%;
+	 text-decoration:underline;
+}
+section{
+	padding: 10px;
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+A{
+	background: #8f8f8f;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+	}
+
+A:hover{
+	background:#828883;
+	color:#FFF;
+*/
+
+
+/*-------Class--------*/
+
+.label{
+	width: 150px;
+	display: inline-block;
+	margin-left: 5px;
+	
+}
+
+.bouton{
+	float: none;
+	text-align:center;
+	color:green;
+}
+.centredroit{
+	  float: right;
+      padding: 7px 0px;
+      margin: 10px -13px 0px 0px;
+}
+
+.espacedroit{
+      margin: 0px 5px 0px 5px;
+      display: inline
+}
+
+.centre{
+    margin: auto;
+    width: max-content;
+}
+    
+.background_index{
+    background-image:url(plan_index.jpg);
+    margin:0;
+    /*background-repeat:no-repeat;*/
+}
+
+.background_le_tir{
+    background-image:url(plan_tir.jpg);
+    margin:0;
+    /*background-repeat:no-repeat;*/
+}
+
+.carré_blanc{
+    margin: 25% auto -15em auto;
+    height: 300px;
+    background-color: white;
+    z-index: -1;
+    position: relative;
+    opacity: 20%;
+}
+
+.mathys_tournayre{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border: 10px groove #6b6b6b;
+    width: max-content;
+    margin: auto auto 1.5em auto;
+    padding: 20px;
+    position: relative;
+    color: white;
+    transition:color ease-in-out 0.75s;
+    font-family:;
+}
+  
+.mathys_tournayre:hover{
+    animation: jello 2s infinite;
+    transform-origin: center;
+    color:black;
+}  
+
+.shooting{
+    color: white;
+    padding: 1% 0px 0px 0px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shooting:hover{
+    animation: jello 2s infinite;
+    transform-origin: center
+}
+.ligne_points{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-left: 5px dotted #696969;
+    top: 10em;
+    height: 700px;
+}
+
+.texteshooting{
+    border: 5px outset white;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    padding: 1em;
+    text-align: left;
+    margin: 0 0 0 2em;
+    box-shadow: 6px 6px 0px #700000;
+    width: max-content;
+}
+
+
+
+/*-----------------------Julio code + autres---------------------*/
+
+/*-------button1--------*/
+.button1 {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    border: 5px solid #800;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0px 1.6em 0px 10px;
+    color:black;
+    transition:color ease 0.5s;
+}    
+
+
+@keyframes pulse {
+    from { 
+        box-shadow:
+            0 0 25px #800;
+            0 0 50px #800;
+    }
+}
+
+ 
+.button1:hover{
+    animation:
+        pulse 1s;
+    color:#4f0000;
+}
+
+
+
+/*-------button2--------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+.button2 {
+    --color: #800;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 25px;
+    border: 3px solid var(--color);
+    margin-right: 30px;
+    color:white;
+}
+
+.button2::before,
+.button2::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: width .25s .15s, height .25s;
+}
+
+.button2::before {
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+
+.button2::after {
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+
+.button2:hover::before,
+.button2:hover::after {
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+
+
+/*-------Titre animé--------*/
+
+@keyframes jello {
+  11.1% {
+    transform: none
+  }
+  22.2% {
+    transform: skewX(-12.5deg) skewY(-12.5deg)
+  }
+  33.3% {
+    transform: skewX(6.25deg) skewY(6.25deg)
+  }
+  44.4% {
+    transform: skewX(-3.125deg) skewY(-3.125deg)
+  }
+  55.5% {
+    transform: skewX(1.5625deg) skewY(1.5625deg)
+  }
+  66.6% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg)
+  }
+  77.7% {
+    transform: skewX(0.390625deg) skewY(0.390625deg)
+  }
+  88.8% {
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg)
+  }
+  100% {
+    transform: none
+  }
+}
+
+/*-------FAQ Style--------*/
+
+.faq {
+  width: max-content;
+  display: grid;
+  margin: 50px 4px 0px 0px;
+  float:right;
+}
+
+.question {
+  color: #fff;
+  font-weight: normal;
+  position: relative;
+  background: #3d3d3e;
+  margin: 0 0 0 0;
+  opacity: .9;
+  padding: 10px 50px 10px 50px;
+  display: block;
+  cursor: pointer;
+  text-shadow: -1px 1px 0px #393939, -2px 2px 0px #000;
+  width: 164.433px;
+  text-align: center;
+}
+
+.answers {
+  border-top: 1px solid #f00;
+  background: #1d1d1d;
+  margin: 0 0 7px 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .7s ease;
+  -moz-transition: .7s ease;
+  -o-transition: .7s ease;
+  transition: .7s ease;
+  width: auto;
+  
+}
+
+.questions:checked ~ .answers{
+  opacity: 1;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 10px;
+  z-index: 5;
+  font-size: 1.8em;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  user-select: none;
+  transition: .3s ease;
+  margin-top: 3px;
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.questions {
+  display: none;
+}
+
